@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Net.Sockets;
 using System.Net;
 using System.Text;
-using UnityEngine.UI
+using UnityEngine.UI;
 
 public class SocketClientUDP : MonoBehaviour
 {

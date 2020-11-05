@@ -2,11 +2,11 @@
 ThreadDemoTest
 线程基本操作：创建、暂停、停止
 跨线程访问UnityAPI：ThreadCrossHelper : MonoSingleton<ThreadCrossHelper>
-Socket编程（IP/PORT/UDP/TCP）：
+Socket编程（IP/PORT/UDP/TCP）：进程间通信、网络中设备
 UDP:1.创建Socket对象 2.发送Send 3.接受Receive......4.释放资源Close。
 TCP:
-
-
+--20201105--
+TCP:1.2.3.4.5.
 
 
 
