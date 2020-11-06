@@ -39,8 +39,8 @@ namespace Network
         {
             ChatMessage msg = new ChatMessage();
             msg.type = type;
-            msg.SenderName = "yang";
-            msg.Content = "Hello";
+            msg.SenderName = "";
+            msg.Content = "";
             
             SendMessage(msg);
         } 
@@ -50,8 +50,9 @@ namespace Network
         public void SendMessage(ChatMessage msg)
         {
             byte[] data = msg.ObjectToBytes();
-            int count = udpService.Send(data, data.Length);
-            Debug.Log(count);
+            udpService.Send(data, data.Length);
+            //int count = udpService.Send(data, data.Length);
+            //Debug.Log(count);
             
         }
 
@@ -69,9 +70,17 @@ namespace Network
                 if (MessageArrived == null) continue;//ThreadCrossHelper
 	            MessageArrivedEventArgs args = new MessageArrivedEventArgs()
 	            {
-	                
+	                ArrivedTime=DateTime.Now,
+                    Message = msg
 	            };
-	            MessageArrived(this, args);
+                ThreadCrossHelper.instance.ExecuteOnMainThread(() => 
+                {
+                
+                MessageArrived(this, args);
+                
+                
+                });
+                
             }
         }
 	    //印发事件（1.事件参数类2.委托3.声明事件4.引发）

@@ -12,6 +12,7 @@ namespace Common
         {
             base.Init();
             actionList=new List<DelayItem>();
+            
         }
         
         class DelayItem
