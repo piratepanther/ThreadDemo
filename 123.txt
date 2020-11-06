@@ -8,6 +8,8 @@ TCP:
 --20201105--
 TCP:1.2.3.4.5.
 基于UDP的ClientUDPService
+--20201106--
+实现UDP.C/S通信软件发布
 
 
 
