@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Network.ChatClient">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACBABAAAAAAAIAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Chat\ChatClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Network.ChatServer">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Chat\ChatServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Network.GameMain" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAACAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Script\Chat\GameMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Network.ClientUDPService">
+    <Position X="3.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEBAAQAAAAAIgACAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\NetWork\ClientUDPService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Network.ServerUDPService">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEBAAQAAAAAIAACAABABAAAAAAAAAAAACAAACAAA=</HashCode>
+      <FileName>Assets\Script\NetWork\ServerUDPService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Network.ChatMessage">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAQAgAAAAAAAAAAAAAIAAABAAAAAAAAAEAgAAA=</HashCode>
+      <FileName>Assets\Script\NetWork\ChatMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

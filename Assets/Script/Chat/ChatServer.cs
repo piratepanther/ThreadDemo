@@ -1,11 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Net;
-using System.Net.Sockets;
 using Common;
-using System;
-using System.Threading;
 using UnityEngine.UI;
+using System;
 
 namespace Network
 {
@@ -29,10 +25,9 @@ namespace Network
         private void DisplayMessage(object sender, MessageArrivedEventArgs e)
         {
 
-            ChatMessageText.text += string.Format("{0}---{1}\t",e.Message.SenderName,e.Message.Content);
+            ChatMessageText.text += string.Format("{0}---{1}---{2}\n", DateTime.Now,e.Message.SenderName,e.Message.Content);
 
             //e.ArrivedTime)+"/n"+
-
         }
 
 //         private void OnSendMessageButtonClick()
